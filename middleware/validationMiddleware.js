@@ -26,7 +26,7 @@ export const validateContactInfo = withValidationErrors([
     .withMessage("invalid email format")
     .notEmpty()
     .withMessage("email is required"),
-  body("theme").notEmpty().withMessage("theme is required"),
+  body("theme").notEmpty().withMessage("subject is required"),
   body("info").notEmpty().withMessage("info is required"),
   body("company").notEmpty().withMessage("company is required"),
 ]);
