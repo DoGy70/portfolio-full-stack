@@ -18,13 +18,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 app.use(express.json());
-app.use(express.static(path));
+app.use(express.static(path.resolve(__dirname, "./public")));
 app.use("/api/v1", contactRoute);
 
 const port = process.env.PORT || 5100;
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./client/dist", "index.html"));
+  res.sendFile(path.resolve(__dirname, "./public", "index.html"));
 });
 
 app.use(errorHandlerMiddleware);
