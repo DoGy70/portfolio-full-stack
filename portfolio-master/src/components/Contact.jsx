@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <div className="page">
         <div className="content">
           <form className="form" onSubmit={(e) => submitForm(e)}>

@@ -6,7 +6,7 @@ export const navButtons = [
   { id: 2, section: "skills", url: "#skills" },
   { id: 3, section: "projects", url: "#projects" },
   { id: 4, section: "certificates", url: "#certificates" },
-  { id: 5, section: "socials", url: "#links" },
+  { id: 5, section: "contact me", url: "#contact" },
 ];
 
 export const socialLinks = [
