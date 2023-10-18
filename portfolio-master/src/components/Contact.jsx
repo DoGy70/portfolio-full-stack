@@ -30,7 +30,6 @@ const Contact = () => {
       restartStates();
     } catch (error) {
       toast.error(error?.response?.data?.msg);
-      restartStates();
     }
   };
 
